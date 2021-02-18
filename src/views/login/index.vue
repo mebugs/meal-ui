@@ -13,7 +13,7 @@
         <el-input
           ref="name"
           v-model="loginForm.name"
-          placeholder="name"
+          placeholder="请输入账号"
           name="name"
           type="text"
           tabindex="1"
@@ -30,7 +30,7 @@
           ref="password"
           v-model="loginForm.password"
           :type="passwordType"
-          placeholder="Password"
+          placeholder="请输入密码"
           name="password"
           tabindex="2"
           auto-complete="on"
@@ -111,7 +111,7 @@ export default {
 </script>
 
 <style scoped>
-.login-container{height:100%;width:100%;background:url(/bg.jpg) no-repeat;background-size:100% 100%;overflow:hidden;position: relative;}
+.login-container{height:100%;width:100%;background:#304156;position: relative;}
 .login-form {
     position: absolute;
     width: 500px;
@@ -119,8 +119,9 @@ export default {
     padding: 20px;
     left: calc(50vw - 250px);
     top: calc(50vh - 200px);
-    background: rgba(0,0,0,0.7);
+    background: rgba(0,0,0,0.5);
     border-radius: 20px;
+    box-shadow: 0 2px 5px #000;
 }
 
 .title {
@@ -134,9 +135,9 @@ export default {
 }
 .el-form-item{border:1px solid #eee;background:rgba(0,0,0,0.2);border-radius:5px;color:#454545}
 .el-input{display:inline-block;height:47px;width:84%;margin-left: 5px;}
-.el-input>>>input{margin:7px 0 0 2px;background-color:#1c2025;border:1px solid #aaa;border-radius:6px;color:#fff}
-.el-input>>>input:-webkit-autofill{box-shadow:0 0 0 1000px #1a222d inset!important;-webkit-text-fill-color:#fff!important}
-.tips{font-size:14px;color:#fff;margin-bottom:10px}
+.el-input>>>input{margin:7px 0 0 2px;background-color:#304156;border:1px solid #aaa;border-radius:6px;color:#fff}
+.el-input>>>input:-webkit-autofill{box-shadow:0 0 0 1000px #304156 inset!important;-webkit-text-fill-color:#fff!important}
+.tips{font-size:14px;color:#fff;margin-bottom:10px;text-align: center;}
 .tips span:first-of-type{margin-right:16px}
 .svg-container{padding:6px 5px 6px 15px;color:#999;vertical-align:middle;width:30px;display:inline-block}
 .title-container{position:relative}
